@@ -1,0 +1,42 @@
+<!-- <div class="container">
+  <app-header></app-header>
+  <div class="content-wrapper">
+    <app-sidebar></app-sidebar>
+    <div class="content">
+      <app-card></app-card>
+      <button mat-raised-button (click)="openDialog()">
+        Add Appointments +
+      </button>
+      <app-list-appointments
+        [items]="items"
+        (itemDeleted)="handleItemDeleted($event)"
+        (itemEdit)="EditItem($event)"
+        (transferItems)="transferItem($event)"
+      ></app-list-appointments>
+    </div>
+  </div>
+</div> -->
+<div class="container">
+  <app-header></app-header>
+  <div class="content-wrapper">
+    <app-sidebar></app-sidebar>
+    <div class="content">
+      <app-card></app-card>
+      <div class="appointments-title">Appointments</div>
+      <button
+        mat-raised-button
+        class="create-appointment-button"
+        (click)="openDialog()"
+      >
+        Add Appointments
+      </button>
+      <app-list-appointments
+        [items]="items"
+        (itemDeleted)="handleItemDeleted($event)"
+        (itemEdit)="EditItem($event)"
+        (transferItems)="transferItem($event)"
+        (rejectItems)="rejecteItems($event)"
+      ></app-list-appointments>
+    </div>
+  </div>
+</div>

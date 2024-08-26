@@ -1,0 +1,42 @@
+/* Style for the entire table */
+.mat-elevation-z8 {
+  width: 100%;
+  border-spacing: 10px; /* Adds space between rows and columns */
+  border-collapse: separate;
+}
+
+/* Style for the header cells */
+th.mat-header-cell {
+  background-color: #f5f5f5; /* Light gray background for header */
+  padding: 10px; /* Adds padding inside header cells */
+  text-align: left; /* Aligns text to the left */
+}
+
+/* Style for the data cells */
+td.mat-cell {
+  padding: 10px; /* Adds padding inside data cells */
+  background-color: #ffffff; /* White background for data cells */
+}
+
+/* Style for Accept button */
+button.accept-button {
+  color: green;
+}
+
+/* Style for Hold button */
+button.hold-button {
+  color: blue;
+}
+button.delete-button {
+  color: rgb(6, 120, 141);
+}
+
+/* Style for Transfer button */
+button.transfer-button {
+  color: black;
+}
+
+/* Style for Reject button */
+button.reject-button {
+  color: red;
+}

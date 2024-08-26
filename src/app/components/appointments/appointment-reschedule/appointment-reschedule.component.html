@@ -1,0 +1,36 @@
+<h1 mat-dialog-title>Reschedule Appointment</h1>
+<div mat-dialog-content>
+  <form [formGroup]="rescheduleForm">
+    <div class="reschedule-header">
+      <mat-form-field appearance="outline" class="date-picker">
+        <mat-label>Appointment Date</mat-label>
+        <input matInput [matDatepicker]="picker" formControlName="date" />
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+
+      <button
+        mat-raised-button
+        color="primary"
+        class="check-availability-button"
+      >
+        Check Availability
+      </button>
+    </div>
+
+    <div class="appointment-details">
+      <p><strong>Inviter :</strong> {{ data.inviter }}</p>
+      <p><strong>Priority :</strong> {{ data.priority }}</p>
+      <p><strong>Date :</strong> {{ data.date }}</p>
+      <p><strong>Time :</strong> {{ data.time }}</p>
+      <p><strong>No's of Visitors :</strong> {{ data.visitors }}</p>
+      <p><strong>Inviter Mail ID :</strong> {{ data.email }}</p>
+      <p><strong>Scheduler :</strong> {{ data.scheduler }}</p>
+      <p><strong>Venue :</strong> {{ data.venue }}</p>
+    </div>
+  </form>
+</div>
+<div mat-dialog-actions class="action-buttons">
+  <button mat-button (click)="onClose()">Cancel</button>
+  <button mat-raised-button color="primary" (click)="onSave()">Submit</button>
+</div>

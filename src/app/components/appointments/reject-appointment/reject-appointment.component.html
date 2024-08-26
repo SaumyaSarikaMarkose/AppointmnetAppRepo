@@ -1,0 +1,37 @@
+<div class="dialog-header">
+  <h2 mat-dialog-title>Transfer Appointment</h2>
+  <button mat-icon-button mat-dialog-close class="close-button">
+    <mat-icon>close</mat-icon>
+  </button>
+</div>
+
+<div mat-dialog-content class="appointment-details">
+  <div class="row">
+    <div class="column">
+      <p><strong>Inviter:</strong> Ram Dev</p>
+      <p>+91 9876543210</p>
+      <p>+91 9876543210</p>
+      <p><strong>No's of Visitors:</strong> 02</p>
+      <p><strong>Inviter Mail ID:</strong> ramdevitel@gmail.com</p>
+    </div>
+    <div class="column">
+      <p><strong>Priority:</strong> High</p>
+      <p><strong>Date:</strong> 02/08/2024</p>
+      <p><strong>Time:</strong> 11:00 AM</p>
+      <p><strong>Scheduler:</strong> Vishnu Vardha</p>
+      <div class="form-group">
+        <mat-form-field appearance="outline" class="reason-textbox">
+          <mat-label>Reason</mat-label>
+          <input matInput [(ngModel)]="reason" placeholder="Enter reason" />
+        </mat-form-field>
+      </div>
+    </div>
+  </div>
+  <p><strong>Venue:</strong> Venue</p>
+</div>
+
+<div mat-dialog-actions class="dialog-actions">
+  <button mat-button color="primary" class="submit-button" (click)="onSubmit()">
+    Submit
+  </button>
+</div>

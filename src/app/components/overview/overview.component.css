@@ -1,0 +1,29 @@
+/* Container for the entire layout */
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  /* Wrapper to align sidebar and content side by side */
+  .content-wrapper {
+    display: flex;
+    flex: 1;
+  }
+  
+  /* Sidebar styling */
+  app-sidebar {
+    width: 250px; /* Adjust the width as needed */
+  }
+  
+  /* Center the content within the available space */
+  .content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center; /* Center the text content */
+  }
+  

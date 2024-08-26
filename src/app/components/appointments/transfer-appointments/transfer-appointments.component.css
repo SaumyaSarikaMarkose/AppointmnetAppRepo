@@ -1,0 +1,58 @@
+.dialog-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.close-button mat-icon {
+  font-size: 24px;
+}
+
+.appointment-details {
+  padding: 20px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.column {
+  flex: 1;
+  padding: 0 10px;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.select-person {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.availability-button {
+  height: 100%;
+  min-width: 160px;
+}
+
+.dialog-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.submit-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}

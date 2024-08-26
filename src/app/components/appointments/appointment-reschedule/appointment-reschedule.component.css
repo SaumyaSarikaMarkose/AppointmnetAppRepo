@@ -1,0 +1,50 @@
+/* Increase the height and width of the date picker and button */
+.date-picker {
+    flex: 1;
+    margin-right: 16px;
+    width: 100%; /* Full width of the container */
+}
+
+.check-availability-button {
+    height: 64px; /* Increase height */
+    width: 200px; /* Set specific width */
+}
+
+/* Adjust the appointment details grid to be more spacious */
+.appointment-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px; /* Increase gap between columns */
+    width: 100%; /* Full width of the container */
+}
+
+/* Ensure buttons in the dialog have more spacing */
+mat-dialog-actions button {
+    min-width: 120px; /* Increase button width */
+    height: 48px; /* Increase button height */
+}
+
+.mat-dialog-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px; /* Increase height of the dialog title area */
+}
+
+.mat-dialog-title h1 {
+    margin: 0;
+    font-size: 24px; /* Increase font size of the title */
+}
+
+.mat-dialog-actions {
+    margin-top: 20px; /* Increase margin to separate buttons */
+}
+
+button {
+    min-width: 120px; /* Increase button width */
+    height: 48px; /* Increase button height */
+}
+
+button + button {
+    margin-left: 12px; /* Increase margin between buttons */
+}

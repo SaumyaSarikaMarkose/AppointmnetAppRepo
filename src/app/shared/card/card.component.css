@@ -1,0 +1,30 @@
+/* reusable-card.component.css */
+.card {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    max-width: 800px; /* Adjust the width as needed */
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+  }
+  
+  .card-image {
+    width: 200px; /* Adjust the width of the image */
+    height: auto;
+  }
+  
+  .card-content {
+    padding: 20px;
+    text-align: left;
+    flex: 1; /* Makes the content take up the remaining space */
+  }
+  
+  .quote {
+    font-size: 16px;
+    color: #555;
+    font-weight: bold;
+  }
+  

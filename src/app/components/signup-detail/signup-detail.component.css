@@ -1,0 +1,50 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f9fa;
+  }
+  
+  .confirmation-box {
+    width: 350px;
+    padding: 40px;
+    background: #fff;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .brand img {
+    display: block;
+    margin: 0 auto 10px;
+    width: 150px;
+  }
+  
+  .status-icon {
+    margin: 20px 0;
+  }
+  
+  .status-icon img {
+    width: 100px;
+  }
+  
+  h2 {
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  p {
+    color: #777;
+    margin-bottom: 20px;
+  }
+  
+  .continue-link {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .continue-link:hover {
+    text-decoration: underline;
+  }
+  

@@ -1,0 +1,26 @@
+.sidebar nav ul {
+  list-style-type: none; /* Removes the default bullet points */
+  padding: 0; /* Removes default padding */
+}
+
+.sidebar nav ul li {
+  margin-bottom: 10px;
+}
+
+.sidebar nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  display: flex; /* Flexbox for icon and text alignment */
+  align-items: center;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.sidebar nav ul li a mat-icon {
+  margin-right: 10px; /* Space between the icon and text */
+}
+
+.sidebar nav ul li a.active {
+  background-color: #f0f0f0; /* Highlight active link */
+}

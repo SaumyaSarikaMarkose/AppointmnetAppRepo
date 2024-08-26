@@ -1,0 +1,83 @@
+<!-- 
+<div class="header">
+  <h1 mat-dialog-title>Transfer Appointment</h1>
+  <button mat-icon-button mat-dialog-close class="close-button">
+    <mat-icon>close</mat-icon>
+  </button>
+</div>
+
+<div mat-dialog-content class="appointment-details">
+  <mat-form-field appearance="fill" class="select-person">
+    <mat-label>Select Person</mat-label>
+    <mat-select [(ngModel)]="selectedPerson">
+      <mat-option *ngFor="let person of people" [value]="person">
+        {{ person }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <div class="row">
+    <div class="column">
+      <p><strong>Inviter:</strong> {{ data.inviter }}</p>
+      <p><strong>Contact:</strong> {{ data.contact }}</p>
+      <p><strong>No's of Visitors:</strong> {{ data.visitors }}</p>
+    </div>
+    <div class="column">
+      <p><strong>Priority:</strong> {{ data.priority }}</p>
+      <p><strong>Date:</strong> {{ data.date }}</p>
+      <p><strong>Time:</strong> {{ data.time }}</p>
+      <p><strong>Scheduler:</strong> {{ data.scheduler }}</p>
+    </div>
+  </div>
+  <p><strong>Venue:</strong> {{ data.venue }}</p>
+</div>
+
+<div mat-dialog-actions class="dialog-actions">
+  <button mat-button color="primary" class="view-button" (click)="onSubmit()">
+    Submit
+  </button>
+</div> -->
+<div class="dialog-header">
+  <h2 mat-dialog-title>Transfer Appointment</h2>
+  <button mat-icon-button mat-dialog-close class="close-button">
+    <mat-icon>close</mat-icon>
+  </button>
+</div>
+
+<div mat-dialog-content class="appointment-details">
+  <div class="form-group">
+    <mat-form-field appearance="outline" class="select-person">
+      <mat-label>Select Person</mat-label>
+      <mat-select [(ngModel)]="selectedPerson">
+        <mat-option *ngFor="let person of people" [value]="person">
+          {{ person }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <button mat-button color="primary" class="availability-button">
+      Check Availability
+    </button>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <p><strong>Inviter:</strong> Ram Dev</p>
+      <p>+91 9876543210</p>
+      <p>+91 9876543210</p>
+      <p><strong>No's of Visitors:</strong> 02</p>
+      <p><strong>Inviter Mail ID:</strong> ramdevitel@gmail.com</p>
+    </div>
+    <div class="column">
+      <p><strong>Priority:</strong> High</p>
+      <p><strong>Date:</strong> 02/08/2024</p>
+      <p><strong>Time:</strong> 11:00 AM</p>
+      <p><strong>Scheduler:</strong> Vishnu Vardha</p>
+    </div>
+  </div>
+  <p><strong>Venue:</strong> Venue</p>
+</div>
+
+<div mat-dialog-actions class="dialog-actions">
+  <button mat-button color="primary" class="submit-button" (click)="onSubmit()">
+    Submit
+  </button>
+</div>
